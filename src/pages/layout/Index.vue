@@ -1,35 +1,48 @@
 <template>
     <div class="layout">
-        <!-- 左侧导航区域 -->
-        <Menu class="menu"></Menu>
-        <!-- 右侧内容区域 -->
-        <MainContent class="content"></MainContent>
+        <Layout>
+            <MainHeader style="height: 60px"></MainHeader>
+            <MainContent class="layout-content"></MainContent>
+            <MainFooter class="layout-footer"></MainFooter>
+        </Layout>
     </div>
 </template>
 
 <script>
-    import Menu from "./Menu";
     import MainContent from "./MainContent";
+    import MainHeader from "./MainHeader";
+    import MainFooter from "./MainFooter";
     export default {
         name: "Index",
         components: {
-            Menu, MainContent
+            MainHeader,
+            MainContent,
+            MainFooter
         }
     }
 </script>
 
 <style scoped>
-    .layout {
+    .layout{
+        border: 1px solid #d7dde4;
+        background: #f5f7f9;
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
     }
-    .menu {
-        width: 200px;
-        min-height: 500px;
-        background-color: #39c5bb;
+    .layout-content {
         position: fixed;
-        top: 0;
-        bottom: 0;
+        top: 60px;
+        bottom: 30px;
+        left: 0;
+        right: 0;
     }
-    .content {
-        margin-left: 200px;
+    .layout-footer {
+        height: 30px;
+        vertical-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 </style>

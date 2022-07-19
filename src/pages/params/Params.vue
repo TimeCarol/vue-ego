@@ -1,10 +1,12 @@
 <template>
-    <h1>导航</h1>
+    <div>
+        规格参数
+    </div>
 </template>
 
 <script>
     export default {
-        name: "Menu"
+        name: "Params"
     }
 </script>
 

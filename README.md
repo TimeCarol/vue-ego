@@ -1,24 +1,17 @@
 # vue-ego
 
-## Project setup
+## 安装项目相关依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 运行项目
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 后端服务器启动
 ```
-npm run build
+cd server
+node server
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
