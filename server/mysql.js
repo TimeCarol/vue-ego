@@ -18,7 +18,9 @@ function printSqlInfo(sql) {
 }
 //封装数据库操作语句 sql语句 参数数组arr  callback成功函数结果
 function sqlFun(sql, arr, callback) {
-    printSqlInfo(sql); //打印sql信息
+    //打印sql信息
+    if (arr) printSqlInfo(sql+ '  Parameter => ' + arr);
+    else printSqlInfo(sql);
     client.query(sql, arr, function (error, result) {
         if (error) {
             console.log('数据库语句错误');

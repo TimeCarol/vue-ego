@@ -4,7 +4,7 @@ import { Button, Table, Menu, MenuItem, Icon, Sider, Submenu,
     Layout, Breadcrumb, BreadcrumbItem, Content, Input, Page,
     Form, FormItem, Select, Option, Row, Col, RadioGroup, Radio,
     CheckboxGroup, Checkbox, DatePicker, TimePicker, Upload, Modal,
-    Cascader} from 'view-design';
+    Cascader, Message} from 'view-design';
 //引入IView-UI样式
 import 'view-design/dist/styles/iview.css';
 //按需引入
@@ -36,3 +36,5 @@ Vue.component('TimePicker', TimePicker);
 Vue.component('Upload', Upload);
 Vue.component('Modal', Modal);
 Vue.component('Cascader', Cascader);
+Vue.prototype.$Message = Message;
+

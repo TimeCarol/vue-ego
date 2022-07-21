@@ -16,6 +16,12 @@ const api = {
     },
     getCategory(params) {
         return axios.get(base.category, {params});
+    },
+    getCategoryByCid(params) {
+        return axios.get(base.getCategoryByCid, {params});
+    },
+    addGoods(params) {
+        return axios.get(base.addGoods, {params});
     }
 };
 

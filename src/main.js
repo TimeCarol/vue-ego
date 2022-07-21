@@ -15,5 +15,10 @@ new Vue({
   router,
   beforeCreate() {
     Vue.prototype.$bus = this;
+    //设置消息提示样式
+    this.$Message.config({
+      top: 50, //提示组件距离顶端的距离，单位像素
+      duration: 5, //默认自动关闭的延时，单位秒
+    });
   }
 }).$mount('#app');

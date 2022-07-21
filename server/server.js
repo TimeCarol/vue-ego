@@ -2,6 +2,10 @@
 const express = require('express');
 
 const app = express();
+//post请求表单数据
+app.use(express.urlencoded({ extended: true }));
+//静态文件托管
+app.use(express.static('upload'));
 
 const router = require('./router');
 
